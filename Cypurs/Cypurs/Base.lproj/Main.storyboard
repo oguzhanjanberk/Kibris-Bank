@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iKV-hE-Z14">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Light-BETA.otf">
+            <string>Inter-LightBETA</string>
+        </array>
+        <array key="Inter-Medium.otf">
+            <string>Inter-Medium</string>
+        </array>
+        <array key="Inter-Regular.otf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Yardım-->
+        <scene sceneID="c5S-wS-qrl">
+            <objects>
+                <viewController id="WWm-Wy-2eT" customClass="SecondViewController" customModule="Kibris_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hM4-Ze-LY2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Women" translatesAutoresizingMaskIntoConstraints="NO" id="XVc-Eq-8yV">
+                                <rect key="frame" x="123" y="282" width="176" height="149"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5G-cf-lZo">
+                                <rect key="frame" x="41" y="549" width="333" height="87"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="E-Posta" backgroundImage="blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailMeButton:" destination="WWm-Wy-2eT" eventType="touchUpInside" id="hYy-gi-fQc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Destek,hatalar veya herhangi bir sorgulama için aşağıdaki posta adresine başvurunuz" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl0-ue-Gcg">
+                                <rect key="frame" x="66" y="179" width="282" height="62"/>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L95-kE-0wa" firstAttribute="trailing" secondItem="Jl0-ue-Gcg" secondAttribute="trailing" constant="91" id="3iG-8s-e35"/>
+                            <constraint firstItem="L95-kE-0wa" firstAttribute="bottom" secondItem="I5G-cf-lZo" secondAttribute="bottom" constant="177" id="7IN-W4-zgQ"/>
+                            <constraint firstItem="I5G-cf-lZo" firstAttribute="leading" secondItem="L95-kE-0wa" secondAttribute="leading" constant="41" id="ISK-FP-1Ne"/>
+                            <constraint firstItem="XVc-Eq-8yV" firstAttribute="top" secondItem="Jl0-ue-Gcg" secondAttribute="bottom" constant="41" id="LrK-sA-1cr"/>
+                            <constraint firstItem="I5G-cf-lZo" firstAttribute="top" secondItem="XVc-Eq-8yV" secondAttribute="bottom" constant="118" id="T5h-Cx-w7l"/>
+                            <constraint firstItem="L95-kE-0wa" firstAttribute="trailing" secondItem="XVc-Eq-8yV" secondAttribute="trailing" constant="115" id="TkU-I0-o9l"/>
+                            <constraint firstItem="L95-kE-0wa" firstAttribute="trailing" secondItem="I5G-cf-lZo" secondAttribute="trailing" constant="40" id="ZLG-V0-qx8"/>
+                            <constraint firstItem="Jl0-ue-Gcg" firstAttribute="top" secondItem="L95-kE-0wa" secondAttribute="top" constant="39" id="a2S-ey-gDU"/>
+                            <constraint firstItem="XVc-Eq-8yV" firstAttribute="top" secondItem="Jl0-ue-Gcg" secondAttribute="bottom" constant="41" id="dRm-3M-xRl"/>
+                            <constraint firstItem="XVc-Eq-8yV" firstAttribute="leading" secondItem="L95-kE-0wa" secondAttribute="leading" constant="123" id="kLM-1j-pQN"/>
+                            <constraint firstItem="I5G-cf-lZo" firstAttribute="top" secondItem="XVc-Eq-8yV" secondAttribute="bottom" constant="118" id="mIT-NH-cRh"/>
+                            <constraint firstItem="Jl0-ue-Gcg" firstAttribute="leading" secondItem="L95-kE-0wa" secondAttribute="leading" constant="41" id="v0v-VA-naV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L95-kE-0wa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yardım" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="POe-wu-xPi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJO-Fo-daK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2689.8550724637685" y="139.95535714285714"/>
+        </scene>
+        <!--Bankalar-->
+        <scene sceneID="W94-2h-Llk">
+            <objects>
+                <tableViewController id="J0K-76-NwQ" customClass="ThirdTableViewController" customModule="Kibris_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XVk-tI-KKA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Girne" id="B2H-hd-gPO">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="JYB-66-Ld4">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JYB-66-Ld4" id="JNh-t3-Gk0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İktisatbank Girne Şube" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-Wz-beP">
+                                                    <rect key="frame" x="20" y="4" width="185" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Atatürk Cd, Girne 99300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCi-0O-lBj">
+                                                    <rect key="frame" x="27" y="33" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOl-Vv-ZEq">
+                                                    <rect key="frame" x="20" y="56" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE7-kJ-a50">
+                                                    <rect key="frame" x="352" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="ikisCall:" destination="J0K-76-NwQ" eventType="touchUpInside" id="xNv-zw-9m6"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cE7-kJ-a50" secondAttribute="bottom" constant="26" id="W2F-dR-HR9"/>
+                                                <constraint firstItem="cE7-kJ-a50" firstAttribute="top" secondItem="JNh-t3-Gk0" secondAttribute="topMargin" constant="17" id="lh8-sS-XKK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cE7-kJ-a50" secondAttribute="trailing" constant="14" id="zrx-8X-rDz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="S4Q-4e-uDJ">
+                                        <rect key="frame" x="0.0" y="118" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S4Q-4e-uDJ" id="5kW-tl-dTR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Universal Bank-girne Şubesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNu-6W-F9q">
+                                                    <rect key="frame" x="20" y="4" width="229" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="111, Ziya Rızkı Cd, 99300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zza-2T-rlt">
+                                                    <rect key="frame" x="27" y="33" width="142" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsu-7f-gRh">
+                                                    <rect key="frame" x="20" y="56" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjD-Ag-bGp">
+                                                    <rect key="frame" x="352" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="UniversalGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="isC-O1-t0J"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="sjD-Ag-bGp" secondAttribute="trailing" constant="14" id="Tf0-sF-QkJ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="sjD-Ag-bGp" secondAttribute="bottom" constant="26" id="oPd-uU-yQY"/>
+                                                <constraint firstItem="sjD-Ag-bGp" firstAttribute="top" secondItem="5kW-tl-dTR" secondAttribute="topMargin" constant="17" id="oT2-e0-Aca"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="LCL-Os-aXb">
+                                        <rect key="frame" x="0.0" y="208" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LCL-Os-aXb" id="uJA-ID-rLa">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7p-c2-NJ8">
+                                                    <rect key="frame" x="20" y="54" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kıbrıs Vakıflar Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvz-gW-v7t">
+                                                    <rect key="frame" x="20" y="0.0" width="158" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKp-z3-oBn">
+                                                    <rect key="frame" x="352" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="vakGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="jm3-ue-Sbh"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ecevit Caddesi, Girne, 99300 Kıbrıs" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jU9-AJ-Zcs">
+                                                    <rect key="frame" x="20" y="19" width="201.66666666666669" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JKp-z3-oBn" firstAttribute="top" secondItem="uJA-ID-rLa" secondAttribute="topMargin" constant="17" id="DAY-3y-i3E"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="JKp-z3-oBn" secondAttribute="trailing" constant="14" id="clZ-V8-Q2B"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="JKp-z3-oBn" secondAttribute="bottom" constant="26" id="nVO-cO-4Pe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="SGd-cm-dvL">
+                                        <rect key="frame" x="0.0" y="298" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SGd-cm-dvL" id="PQm-eQ-BsS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Türk Bankasi Merkez Şubesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYp-zL-ZzJ">
+                                                    <rect key="frame" x="20" y="1" width="229" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ziya Rızkı Cd, Girne 99300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jks-5g-4eR">
+                                                    <rect key="frame" x="20" y="30" width="152" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BD4-j7-yzO">
+                                                    <rect key="frame" x="20" y="54" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP7-4l-w3U">
+                                                    <rect key="frame" x="345" y="27" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="turkGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="6wa-eJ-lUv"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wP7-4l-w3U" secondAttribute="bottom" constant="27" id="517-tx-awu"/>
+                                                <constraint firstItem="wP7-4l-w3U" firstAttribute="top" secondItem="PQm-eQ-BsS" secondAttribute="topMargin" constant="16" id="AgJ-a6-eC9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wP7-4l-w3U" secondAttribute="trailing" constant="14" id="X6g-va-SRk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="2bW-or-OLD">
+                                        <rect key="frame" x="0.0" y="388" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2bW-or-OLD" id="i1b-xx-4V5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Garanti Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaO-j4-AYf">
+                                                    <rect key="frame" x="20" y="1" width="105" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mete Adanır Cd No:18, Girne 99300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZq-EJ-F2d">
+                                                    <rect key="frame" x="20" y="30" width="202" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpy-VO-Rir">
+                                                    <rect key="frame" x="20" y="54" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiJ-oM-hQY">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="garantiGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="fBS-Ac-sTa"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="CiJ-oM-hQY" firstAttribute="top" secondItem="i1b-xx-4V5" secondAttribute="topMargin" constant="17" id="fb3-Qq-sAP"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CiJ-oM-hQY" secondAttribute="trailing" constant="14" id="hRE-LE-Hbs"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="CiJ-oM-hQY" secondAttribute="bottom" constant="26" id="rtd-Ci-NbH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="HZ5-ni-ahS">
+                                        <rect key="frame" x="0.0" y="478" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HZ5-ni-ahS" id="aFt-gf-1GV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Yakın Doğu Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5l-zI-7Hv">
+                                                    <rect key="frame" x="20" y="11" width="141" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ziya Rızkı Cd, Girne 99300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OM4-2Q-aeN">
+                                                    <rect key="frame" x="20" y="30" width="152" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGR-mS-BO6">
+                                                    <rect key="frame" x="20" y="47" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBQ-oV-diJ">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="yakinGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="JH3-mP-L0f"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="MBQ-oV-diJ" secondAttribute="trailing" constant="14" id="XWb-i2-Xvc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="MBQ-oV-diJ" secondAttribute="bottom" constant="26" id="coH-Hn-lPe"/>
+                                                <constraint firstItem="MBQ-oV-diJ" firstAttribute="top" secondItem="aFt-gf-1GV" secondAttribute="topMargin" constant="17" id="tcc-7H-waO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="IWt-t5-LOn">
+                                        <rect key="frame" x="0.0" y="568" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IWt-t5-LOn" id="XGC-ht-UIJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ing Bank-girne Şubesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saO-2r-SyN">
+                                                    <rect key="frame" x="20" y="11" width="179" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ziya Rızkı Cd, Girne 99300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsB-1L-h5L">
+                                                    <rect key="frame" x="20" y="30" width="152" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJi-Od-Ngp">
+                                                    <rect key="frame" x="20" y="47" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYM-YU-Yqp">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="ingGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="mqr-4a-3dD"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wYM-YU-Yqp" secondAttribute="bottom" constant="26" id="QCb-Tg-H2t"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wYM-YU-Yqp" secondAttribute="trailing" constant="14" id="Sed-Yc-bQR"/>
+                                                <constraint firstItem="wYM-YU-Yqp" firstAttribute="top" secondItem="XGC-ht-UIJ" secondAttribute="topMargin" constant="17" id="e7U-5p-vJd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="RCW-kd-uaW">
+                                        <rect key="frame" x="0.0" y="658" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RCW-kd-uaW" id="hPQ-1k-5d6">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HSBC Bankası Girne Şb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jH-Y9-b2g">
+                                                    <rect key="frame" x="20" y="11" width="190" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ziya Rızkı Cd, Girne 99300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvj-OC-rZ0">
+                                                    <rect key="frame" x="20" y="30" width="152" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uy-h6-akN">
+                                                    <rect key="frame" x="20" y="47" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seg-no-VNd">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="hsbcGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="UCR-DG-aVE"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="seg-no-VNd" secondAttribute="trailing" constant="14" id="8pc-u7-Ysg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="seg-no-VNd" secondAttribute="bottom" constant="26" id="pl5-0D-off"/>
+                                                <constraint firstItem="seg-no-VNd" firstAttribute="top" secondItem="hPQ-1k-5d6" secondAttribute="topMargin" constant="17" id="rIR-g2-7ff"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="2Gh-W1-Z9x">
+                                        <rect key="frame" x="0.0" y="748" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Gh-W1-Z9x" id="YTY-Iy-7ez">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Business Bank K.K.T.C. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMo-r5-b5v">
+                                                    <rect key="frame" x="20" y="11" width="191" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ziya Rızkı Cad. No: 119 Girne K.k.t.c 0, 01400" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rK5-Va-hak">
+                                                    <rect key="frame" x="20" y="30" width="255" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3E-Ux-yt3">
+                                                    <rect key="frame" x="20" y="47" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4C-Tv-DG2">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="kktcGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="Xco-u4-yEL"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="b4C-Tv-DG2" secondAttribute="trailing" constant="14" id="6M9-Of-can"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="b4C-Tv-DG2" secondAttribute="bottom" constant="26" id="7hN-6n-D8N"/>
+                                                <constraint firstItem="b4C-Tv-DG2" firstAttribute="top" secondItem="YTY-Iy-7ez" secondAttribute="topMargin" constant="17" id="nS4-a2-ZFL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="q1V-8D-Tc6">
+                                        <rect key="frame" x="0.0" y="838" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q1V-8D-Tc6" id="HHE-88-IR7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Limasol Türk Kooperatif Bankası" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wA2-Py-1eM">
+                                                    <rect key="frame" x="20" y="11" width="414" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Orhaneli Sk, Girne 99300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU0-V3-YPH">
+                                                    <rect key="frame" x="20" y="30" width="144" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvf-Ge-Stg">
+                                                    <rect key="frame" x="20" y="47" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHA-sT-KPT">
+                                                    <rect key="frame" x="352" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="limasolGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="Rjb-cI-BfA"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="AHA-sT-KPT" secondAttribute="trailing" constant="14" id="L9G-AW-1yG"/>
+                                                <constraint firstItem="AHA-sT-KPT" firstAttribute="top" secondItem="HHE-88-IR7" secondAttribute="topMargin" constant="17" id="fph-9w-igi"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="AHA-sT-KPT" secondAttribute="bottom" constant="26" id="yfz-ym-dzL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="4ib-hu-r1V">
+                                        <rect key="frame" x="0.0" y="928" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4ib-hu-r1V" id="yGp-NF-qzf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Near East Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuM-on-FfI">
+                                                    <rect key="frame" x="20" y="11" width="124" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kyrenia 99320" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0h-Er-ZTj">
+                                                    <rect key="frame" x="20" y="30" width="83" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEr-AK-wp4">
+                                                    <rect key="frame" x="20" y="47" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rna-zj-hcx">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="neareastGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="ycq-Oa-dPI"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Rna-zj-hcx" secondAttribute="bottom" constant="26" id="G6v-ax-sLQ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Rna-zj-hcx" secondAttribute="trailing" constant="14" id="TVk-QZ-WNQ"/>
+                                                <constraint firstItem="Rna-zj-hcx" firstAttribute="top" secondItem="yGp-NF-qzf" secondAttribute="topMargin" constant="17" id="bnw-9D-HD3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="csy-xQ-lfQ">
+                                        <rect key="frame" x="0.0" y="1018" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="csy-xQ-lfQ" id="Q03-MQ-Ibp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Business Bank K.K.T.C. Girne" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5O0-bq-2q2">
+                                                    <rect key="frame" x="20" y="11" width="236" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="111, Ziya Rızkı Cd, 99300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKt-Ni-GuI">
+                                                    <rect key="frame" x="20" y="30" width="142" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuU-91-Jil">
+                                                    <rect key="frame" x="20" y="47" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVL-Y5-oEp">
+                                                    <rect key="frame" x="352" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="kktc2Girne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="GWv-51-8ow"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="AVL-Y5-oEp" secondAttribute="trailing" constant="14" id="AwJ-10-ISe"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="AVL-Y5-oEp" secondAttribute="bottom" constant="26" id="BKZ-SP-dGt"/>
+                                                <constraint firstItem="AVL-Y5-oEp" firstAttribute="top" secondItem="Q03-MQ-Ibp" secondAttribute="topMargin" constant="17" id="gfH-wE-UDi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="3bM-0h-HCo">
+                                        <rect key="frame" x="0.0" y="1108" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3bM-0h-HCo" id="gAH-Yn-Ihm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Koopbank - Karakum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGp-m4-4M9">
+                                                    <rect key="frame" x="20" y="11" width="171" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uğur Mumcu Bulvarı, Girne 99300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgv-vJ-iwL">
+                                                    <rect key="frame" x="20" y="30" width="194" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auq-YM-0AI">
+                                                    <rect key="frame" x="20" y="47" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1X-Eg-ICm">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="koopGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="TnH-yg-5Fh"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="I1X-Eg-ICm" secondAttribute="trailing" constant="14" id="HfA-QZ-nGL"/>
+                                                <constraint firstItem="I1X-Eg-ICm" firstAttribute="top" secondItem="gAH-Yn-Ihm" secondAttribute="topMargin" constant="17" id="dud-Xi-mxY"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="I1X-Eg-ICm" secondAttribute="bottom" constant="26" id="kat-Ez-V9s"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="PIB-VO-4dq">
+                                        <rect key="frame" x="0.0" y="1198" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PIB-VO-4dq" id="SiX-n9-9XG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Limassol Turkish " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tW6-X9-hen">
+                                                    <rect key="frame" x="20" y="11" width="140" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kyrenia 99300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sms-BI-znV">
+                                                    <rect key="frame" x="20" y="30" width="83" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaT-Ge-sQi">
+                                                    <rect key="frame" x="20" y="47" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IW-uc-LbQ">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="islamGirne:" destination="J0K-76-NwQ" eventType="touchUpInside" id="myR-Ri-UdZ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="6IW-uc-LbQ" secondAttribute="bottom" constant="26" id="2rL-xW-y3k"/>
+                                                <constraint firstItem="6IW-uc-LbQ" firstAttribute="top" secondItem="SiX-n9-9XG" secondAttribute="topMargin" constant="17" id="78e-FK-ocw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="6IW-uc-LbQ" secondAttribute="trailing" constant="14" id="dzv-bB-hwu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Gazimagusa" id="fSS-KP-YOl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="5v1-gc-Wo0">
+                                        <rect key="frame" x="0.0" y="1344" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5v1-gc-Wo0" id="MBd-yQ-ciS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HSBC Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijk-jq-tGj">
+                                                    <rect key="frame" x="20" y="7" width="93" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İsmet İnönü Blv, Gazimağusa 99450" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjM-Vy-UOI">
+                                                    <rect key="frame" x="20" y="36" width="204" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1K-1G-BTB">
+                                                    <rect key="frame" x="20" y="59" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhv-fd-0sL">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="hsbcGaz:" destination="J0K-76-NwQ" eventType="touchUpInside" id="laz-5U-ypJ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lhv-fd-0sL" secondAttribute="trailing" constant="14" id="Xdm-AZ-tYN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lhv-fd-0sL" secondAttribute="bottom" constant="26" id="n1b-lq-cQx"/>
+                                                <constraint firstItem="lhv-fd-0sL" firstAttribute="top" secondItem="MBd-yQ-ciS" secondAttribute="topMargin" constant="17" id="y5u-Bg-pDq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="4HB-gp-HUe">
+                                        <rect key="frame" x="0.0" y="1434" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4HB-gp-HUe" id="8LN-qQ-4Rh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Koop Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45U-7e-XiH">
+                                                    <rect key="frame" x="19" y="7" width="87" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salamis Yolu, Gazimağusa 99450" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRT-4F-k8w">
+                                                    <rect key="frame" x="19" y="36" width="189" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAg-sm-5zI">
+                                                    <rect key="frame" x="19" y="59" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHk-L0-MTt">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="koopGaz:" destination="J0K-76-NwQ" eventType="touchUpInside" id="02i-kB-c6s"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="CHk-L0-MTt" secondAttribute="bottom" constant="26" id="Dif-yG-rGw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CHk-L0-MTt" secondAttribute="trailing" constant="14" id="Gju-7a-uGc"/>
+                                                <constraint firstItem="CHk-L0-MTt" firstAttribute="top" secondItem="8LN-qQ-4Rh" secondAttribute="topMargin" constant="17" id="or8-iE-foh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Lefkosa" footerTitle="" id="lJG-GD-dOW">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="3aF-JG-doE">
+                                        <rect key="frame" x="0.0" y="1580" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3aF-JG-doE" id="LmU-VK-osJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creditwest Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekb-dV-jhw">
+                                                    <rect key="frame" x="16" y="14" width="134" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28 Kasım Sk, Lefkoşa 99010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrz-Yy-ViE">
+                                                    <rect key="frame" x="16" y="36" width="161" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxc-0z-mhA">
+                                                    <rect key="frame" x="16" y="51" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MG3-4Y-ClL">
+                                                    <rect key="frame" x="360" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="creditLef:" destination="J0K-76-NwQ" eventType="touchUpInside" id="ScI-UE-GkI"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="MG3-4Y-ClL" secondAttribute="trailing" constant="14" id="i2y-k8-o2N"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="MG3-4Y-ClL" secondAttribute="bottom" constant="26" id="v9t-CP-IqZ"/>
+                                                <constraint firstItem="MG3-4Y-ClL" firstAttribute="top" secondItem="LmU-VK-osJ" secondAttribute="topMargin" constant="17" id="zWa-Au-V5G"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="qG1-sd-Z8t">
+                                        <rect key="frame" x="0.0" y="1670" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qG1-sd-Z8t" id="9wk-7F-tsO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wb-9V-XuD" userLabel="Universal Bank">
+                                                    <rect key="frame" x="16" y="14" width="121" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Universal Bank
+</string>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mehmet Akif Caddesi, Lefkoşa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6z-cN-N0Q">
+                                                    <rect key="frame" x="16" y="36" width="172" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuI-tf-u0F">
+                                                    <rect key="frame" x="16" y="51" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfA-Y7-ghY">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="universalLef:" destination="J0K-76-NwQ" eventType="touchUpInside" id="gNp-V6-lga"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cfA-Y7-ghY" firstAttribute="top" secondItem="9wk-7F-tsO" secondAttribute="topMargin" constant="17" id="S6z-Mj-Psx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cfA-Y7-ghY" secondAttribute="trailing" constant="14" id="aNU-Ha-Oin"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cfA-Y7-ghY" secondAttribute="bottom" constant="26" id="hCz-nV-exK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="FRX-aV-262">
+                                        <rect key="frame" x="0.0" y="1760" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FRX-aV-262" id="kCM-fJ-6gl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpM-VD-W2v">
+                                                    <rect key="frame" x="16" y="14" width="242" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Kıbrıs Türk Kooperatif Merkez
+</string>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mahmut Paşa Sk, Lefkoşa 99010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwX-Yg-DdV">
+                                                    <rect key="frame" x="16" y="36" width="185" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbc-1Y-2Qe">
+                                                    <rect key="frame" x="16" y="51" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="890-GT-ECV">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="turkLef:" destination="J0K-76-NwQ" eventType="touchUpInside" id="4y8-fE-eoB"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="890-GT-ECV" secondAttribute="bottom" constant="26" id="NHa-uf-Y78"/>
+                                                <constraint firstItem="890-GT-ECV" firstAttribute="top" secondItem="kCM-fJ-6gl" secondAttribute="topMargin" constant="17" id="luH-ed-mOh"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="890-GT-ECV" secondAttribute="trailing" constant="14" id="ruS-3e-bB7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="wa8-aq-Y5V">
+                                        <rect key="frame" x="0.0" y="1850" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wa8-aq-Y5V" id="PgY-PK-YAO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fortress Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIJ-1m-3Y9">
+                                                    <rect key="frame" x="16" y="14" width="113" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Şht. Hüseyin Paşa Sk 9, Lefkoşa 99010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVn-rE-cXb">
+                                                    <rect key="frame" x="16" y="36" width="221" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl2-Z8-VzF">
+                                                    <rect key="frame" x="16" y="51" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9G-g3-a7Q">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="forLef:" destination="J0K-76-NwQ" eventType="touchUpInside" id="bJh-af-BRt"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Q9G-g3-a7Q" firstAttribute="top" secondItem="PgY-PK-YAO" secondAttribute="topMargin" constant="17" id="8Xa-CE-9jb"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Q9G-g3-a7Q" secondAttribute="bottom" constant="26" id="fis-zc-ZC9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Q9G-g3-a7Q" secondAttribute="trailing" constant="14" id="gd8-aN-dwx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Lefke" id="dKr-wY-lKC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KVc-Ra-vQI">
+                                        <rect key="frame" x="0.0" y="1996" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KVc-Ra-vQI" id="9cw-Wx-BoX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFv-Rw-rtd">
+                                                    <rect key="frame" x="22" y="1" width="180" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">KIbrıs Vakıflar Bankası
+</string>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Atatürk Caddesi, No:C44, Lefke, 99800 Kıbrıs, Lefke 99770" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exL-5G-NBB">
+                                                    <rect key="frame" x="22" y="24" width="191" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zi1-oo-18w">
+                                                    <rect key="frame" x="22" y="65" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSd-gb-m3C">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="vakLefke:" destination="J0K-76-NwQ" eventType="touchUpInside" id="0DS-TK-ZIN"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ZSd-gb-m3C" secondAttribute="bottom" constant="26" id="7wi-7R-I0p"/>
+                                                <constraint firstItem="ZSd-gb-m3C" firstAttribute="top" secondItem="9cw-Wx-BoX" secondAttribute="topMargin" constant="17" id="dR6-ut-c3D"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZSd-gb-m3C" secondAttribute="trailing" constant="14" id="scm-dB-Vsp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="sPH-aC-WqA">
+                                        <rect key="frame" x="0.0" y="2086" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sPH-aC-WqA" id="8Qh-Tt-HjX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7be-7o-J9g">
+                                                    <rect key="frame" x="21" y="8" width="182" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Business Bank K.K.T.C
+</string>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSL-eV-mJ5">
+                                                    <rect key="frame" x="21" y="37" width="163" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">European University of Lefke
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUf-Db-cu3">
+                                                    <rect key="frame" x="21" y="60" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la9-7H-ltm">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="kktcLefke:" destination="J0K-76-NwQ" eventType="touchUpInside" id="v0k-YX-6yu"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="la9-7H-ltm" secondAttribute="bottom" constant="26" id="D4f-m2-jax"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="la9-7H-ltm" secondAttribute="trailing" constant="14" id="MFG-BQ-z0i"/>
+                                                <constraint firstItem="la9-7H-ltm" firstAttribute="top" secondItem="8Qh-Tt-HjX" secondAttribute="topMargin" constant="17" id="a2c-e6-GJ1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Guzelyurt" footerTitle="" id="MmO-Rz-Dmw">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="6Sk-To-drw">
+                                        <rect key="frame" x="0.0" y="2232" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Sk-To-drw" id="9TZ-Ov-ln0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Koopbank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwl-BW-IhY">
+                                                    <rect key="frame" x="22" y="8" width="82" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R. Osman Sk, Güzelyurt 99700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2K-kb-4BG">
+                                                    <rect key="frame" x="22" y="37" width="175" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrE-xr-ILr">
+                                                    <rect key="frame" x="22" y="60" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lk2-wJ-h76">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="koopGuz:" destination="J0K-76-NwQ" eventType="touchUpInside" id="BOz-yO-ylW"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Lk2-wJ-h76" secondAttribute="trailing" constant="14" id="8zI-n6-B80"/>
+                                                <constraint firstItem="Lk2-wJ-h76" firstAttribute="top" secondItem="9TZ-Ov-ln0" secondAttribute="topMargin" constant="17" id="HTF-g1-1uz"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Lk2-wJ-h76" secondAttribute="bottom" constant="26" id="Sk4-pd-fUm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="wHI-pB-bAU">
+                                        <rect key="frame" x="0.0" y="2322" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wHI-pB-bAU" id="sHa-Ig-Waq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Near East Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wy7-s9-bCV">
+                                                    <rect key="frame" x="18" y="13" width="122" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Inter-LightBETA" family="Inter" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kutlu Adalı Bulvarı 24, Güzelyurt 99700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ED7-iH-Lry">
+                                                    <rect key="frame" x="18" y="42" width="222" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Open 9AM ⋅ Closes 5PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZR-wj-x4W">
+                                                    <rect key="frame" x="18" y="65" width="140" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8t-36-1zF">
+                                                    <rect key="frame" x="345" y="28" width="28" height="25"/>
+                                                    <state key="normal" backgroundImage="Mask Group3"/>
+                                                    <connections>
+                                                        <action selector="neareastGuz:" destination="J0K-76-NwQ" eventType="touchUpInside" id="nwC-ZL-erJ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="b8t-36-1zF" secondAttribute="bottom" constant="26" id="0G6-8Q-3Qr"/>
+                                                <constraint firstItem="b8t-36-1zF" firstAttribute="top" secondItem="sHa-Ig-Waq" secondAttribute="topMargin" constant="17" id="f13-lv-bGV"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="b8t-36-1zF" secondAttribute="trailing" constant="14" id="qc1-au-Ad5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="J0K-76-NwQ" id="qOv-JS-Oet"/>
+                            <outlet property="delegate" destination="J0K-76-NwQ" id="PeG-Fs-2lV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Bankalar" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="WvA-LS-psI"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUQ-Mx-ZfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900.0000000000002" y="882.58928571428567"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ohT-gh-EVy">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iKV-hE-Z14" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iFI-sn-C3S">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="14m-Wx-fPU" kind="relationship" relationship="viewControllers" id="rfk-VG-6hL"/>
+                        <segue destination="RpH-vw-0xQ" kind="relationship" relationship="viewControllers" id="1dB-ME-MlU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LKq-Be-DMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71.014492753623188" y="136.60714285714286"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="dB3-B0-8xr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RpH-vw-0xQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Help" image="Icon 3" id="fb4-tj-PDW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="I3G-j6-T0u">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Inter-LightBETA" family="Inter" pointSize="34"/>
+                            <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Inter-LightBETA" family="Inter" pointSize="34"/>
+                            <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WWm-Wy-2eT" kind="relationship" relationship="rootViewController" id="LuJ-4f-Mi1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2Y-4J-0Ha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1779.7101449275365" y="139.95535714285714"/>
+        </scene>
+        <!--Banks-->
+        <scene sceneID="qUI-0n-IAd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="14m-Wx-fPU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Banks" image="Icon 1" id="65W-0o-O65"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="cW2-DT-e8R">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Inter-LightBETA" family="Inter" pointSize="20"/>
+                            <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Inter-LightBETA" family="Inter" pointSize="34"/>
+                            <color key="textColor" red="1" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="J0K-76-NwQ" kind="relationship" relationship="rootViewController" id="AVW-df-QHu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7x-wE-PsT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-301.44927536231887" y="1012.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon 1" width="30" height="26"/>
+        <image name="Icon 3" width="31" height="28"/>
+        <image name="Mask Group3" width="28" height="20"/>
+        <image name="Women" width="176" height="149"/>
+        <image name="blue" width="333" height="53"/>
+    </resources>
+</document>
